@@ -92,6 +92,20 @@ function bindBikeHotspots() {
   });
 }
 
+function insertSebsWebsProject() {
+  const projectPage = document.querySelector('[data-page="projects"]');
+  const areteProject = projectPage?.querySelector(".featured-project");
+  if (!projectPage || !areteProject || projectPage.querySelector('[data-project="sebswebs"]')) return;
+  const sebsWebsProject = document.createElement("article");
+  sebsWebsProject.className = "featured-project reveal";
+  sebsWebsProject.dataset.project = "sebswebs";
+  sebsWebsProject.innerHTML = `
+    <div><p class="eyebrow">New venture</p><h3>SebsWebs</h3><p class="card-subtitle">Local Business Websites</p><p>Developing a focused web design project to create clean, professional and affordable websites for local companies. SebsWebs is built around helping small businesses present themselves clearly online, attract customers and grow with a reliable digital presence.</p><div class="tag-row"><span>Web Design</span><span>Local Business</span><span>Responsive Sites</span><span>Brand Presence</span><span>Client Work</span></div><div class="button-row"><a class="primary-action" href="https://sebswebs.co.uk" target="_blank" rel="noopener">Visit SebsWebs</a></div></div>
+    <div class="project-preview" style="height:clamp(260px, 30vw, 360px);min-height:0;align-self:start;"><img src="https://raw.githubusercontent.com/sebsebeats/sebswebs/main/screenshot-logo-mobile.png" alt="SebsWebs affordable websites for local businesses preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="image-placeholder">SebsWebs Preview</span></div>
+  `;
+  areteProject.insertAdjacentElement("afterend", sebsWebsProject);
+}
+
 function updateReveals() {
   const activePage = document.querySelector(".page.active");
   if (!activePage) return;
@@ -284,6 +298,6 @@ function bindKeyboardShortcuts() {
 }
 
 function init() {
-  bindNavigation(); bindHeroMotion(); bindBikeHotspots(); bindRevealObserver(); bindEmailChoices(); bindKeyboardShortcuts(); startAmbientCanvas(); enableCardTilt(); updateReveals();
+  insertSebsWebsProject(); bindNavigation(); bindHeroMotion(); bindBikeHotspots(); bindRevealObserver(); bindEmailChoices(); bindKeyboardShortcuts(); startAmbientCanvas(); enableCardTilt(); updateReveals();
 }
 document.addEventListener("DOMContentLoaded", init);
