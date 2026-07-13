@@ -46,6 +46,12 @@ function applySnapFinanceUpdates() {
     projectsGrid.prepend(card);
   }
 
+  document.querySelectorAll('a[href="assets/Seb-Banham-CV-Website.pdf"]').forEach((link) => {
+    link.href = 'assets/Seb-Banham-CV-Website.html';
+    link.removeAttribute('download');
+    link.target = '_blank';
+  });
+
   document.querySelectorAll('.reveal').forEach((item) => item.classList.add('visible'));
 }
 
