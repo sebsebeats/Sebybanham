@@ -8,7 +8,7 @@ function applySnapFinanceUpdates() {
   const nplqStat = homeStats?.querySelector('.node-d');
   if (nplqStat) {
     nplqStat.dataset.target = 'experience';
-    nplqStat.innerHTML = '<strong>Credit Risk Analytics</strong><span>Snap Finance</span><em>Used SQL and Excel on production-scale data and presented findings to the CEO, CFO and CCO.</em>';
+    nplqStat.innerHTML = '<strong>Credit Risk Analytics</strong><span>Snap Finance</span><em>Used SQL and Excel on production-scale data and presented findings to senior leadership.</em>';
   }
 
   const journeyTimeline = document.querySelector('[data-page="journey"] .timeline');
@@ -33,7 +33,7 @@ function applySnapFinanceUpdates() {
     const upcomingGroup = [...experiencePage.querySelectorAll('.experience-group')]
       .find((group) => group.textContent.includes('Upcoming Technical Experience'));
     if (upcomingGroup) {
-      upcomingGroup.innerHTML = '<span class="group-label">Data & Commercial Experience</span><article class="experience-card large"><span class="status">Completed</span><h3>Snap Finance</h3><p class="card-subtitle">Strategic Analytics - Credit Risk | July 2026</p><p>Worked directly with the Strategic Analytics team on a real credit-risk analysis project. I learnt SQL and wrote hundreds of lines of code to pull data from a production-scale database containing millions of customer records, then used Excel to analyse the results.</p><p>I met with heads of teams across the business to understand how their functions connected, and presented my findings to the CEO, CFO, CCO and wider team. My analysis identified a potential improvement to the company\'s risk models, and the SQL code and findings are intended for continued use within the business.</p><div class="tag-row"><span>SQL</span><span>Excel</span><span>Credit Risk</span><span>Data Analysis</span><span>Executive Presentation</span><span>Commercial Impact</span></div></article>';
+      upcomingGroup.innerHTML = '<span class="group-label">Data & Commercial Experience</span><article class="experience-card large"><span class="status">Completed</span><h3>Snap Finance</h3><p class="card-subtitle">Strategic Analytics - Credit Risk | July 2026</p><p>Worked directly with the Strategic Analytics team on a real credit-risk analysis project. I learnt SQL and wrote hundreds of lines of code to pull data from a production-scale database containing millions of customer records, then used Excel to analyse the results.</p><p>I met with heads of teams across the business to understand how their functions connected, and presented my findings to senior leadership and the wider team. My analysis identified a potential improvement to the company\'s risk models, and the SQL code and findings are intended for continued use within the business.</p><div class="tag-row"><span>SQL</span><span>Excel</span><span>Credit Risk</span><span>Data Analysis</span><span>Executive Presentation</span><span>Commercial Impact</span></div></article>';
     }
   }
 
