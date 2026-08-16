@@ -1,5 +1,12 @@
 "use strict";
 
+/* Use a dedicated, compact favicon instead of the full-size site logo. */
+const faviconLink = document.querySelector('link[rel="icon"]') || document.createElement('link');
+faviconLink.rel = 'icon';
+faviconLink.type = 'image/svg+xml';
+faviconLink.href = 'assets/favicon.svg?v=1';
+if (!faviconLink.parentNode) document.head.appendChild(faviconLink);
+
 /* Preserve the existing site behaviour from the last known-good version. */
 document.write('<script src="https://cdn.jsdelivr.net/gh/sebsebeats/Sebybanham@0fce12cb5e63988900e45a394fd4fe2c3396c8a7/script.js"><\/script>');
 
