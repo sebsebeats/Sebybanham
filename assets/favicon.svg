@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SB">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="1" stop-color="#020713"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cc8ff"/>
+      <stop offset="1" stop-color="#2f7fff"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#bg)" stroke="#7cc8ff" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M15 20.5c0-5.2 4.6-8.5 11.4-8.5 4.1 0 7.6 1.1 10.2 3.2l-4.2 5.1c-1.8-1.3-3.8-2-6-2-2.6 0-4.1.8-4.1 2.2 0 1.5 1.8 2 5.8 2.9 6.2 1.4 9.2 4 9.2 8.7 0 5.6-4.8 9.2-12.1 9.2-4.9 0-9.2-1.5-12.2-4.3l4.5-5c2.2 1.9 4.8 3 7.8 3 2.9 0 4.7-.9 4.7-2.5 0-1.4-1.5-2.1-5.5-3-6.3-1.4-9.5-3.8-9.5-9z" fill="url(#accent)"/>
+  <path d="M36.5 12.8h7.9c7 0 11 3.1 11 8.2 0 2.9-1.5 5.1-4 6.4 3.5 1.2 5.5 3.8 5.5 7.3 0 5.7-4.4 8.9-12 8.9h-8.4v-30.8zm7.6 12c3.1 0 4.7-1.1 4.7-3.2s-1.6-3.1-4.7-3.1h-.7v6.3h.7zm.8 13.1c3.5 0 5.2-1.2 5.2-3.6s-1.8-3.6-5.2-3.6h-1.5v7.2h1.5z" fill="#f6f9ff"/>
+</svg>
