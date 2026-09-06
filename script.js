@@ -65,14 +65,14 @@ function applySnapFinanceUpdates() {
 function applyBenchPressPRUpdate() {
   const benchStat = document.querySelector('.stat-constellation .node-a');
   if (benchStat) {
-    benchStat.innerHTML = '<strong>140kg</strong><span>Bench Press</span><em>Bench press achieved in August 2026 at age 17.</em>';
+    benchStat.innerHTML = '<strong>150kg</strong><span>Bench Press</span><em>Bench press achieved in September 2026 at age 17.</em>';
   }
 
   const strengthJourney = [...document.querySelectorAll('[data-page="journey"] .timeline-card')]
     .find((card) => card.querySelector('h3')?.textContent.trim() === 'Strength Training');
   if (strengthJourney) {
     const text = strengthJourney.querySelector('p');
-    if (text) text.textContent = 'Built a consistent approach to progression, leading to a 140kg bench press achieved in August 2026 at age 17.';
+    if (text) text.textContent = 'Built a consistent approach to progression, leading to a 150kg bench press achieved in September 2026 at age 17.';
   }
 
   const benchFeature = [...document.querySelectorAll('[data-page="gym"] .gym-feature')]
@@ -80,19 +80,19 @@ function applyBenchPressPRUpdate() {
   if (benchFeature) {
     const description = benchFeature.querySelector('p');
     const number = benchFeature.querySelector('.big-number');
-    if (description) description.textContent = 'Achieved in August 2026 at age 17 after progressing beyond a long plateau.';
-    if (number) number.textContent = '140kg';
+    if (description) description.textContent = 'Achieved in September 2026 at age 17 after continued progression beyond a long plateau.';
+    if (number) number.textContent = '150kg';
   }
 
   const oldGoalPoint = [...document.querySelectorAll('[data-page="gym"] .bench-point')]
     .find((point) => point.textContent.includes('2026 Goal') && point.textContent.includes('140kg'));
   if (oldGoalPoint) {
-    oldGoalPoint.innerHTML = '<strong>Aug 2026</strong><span>140kg at age 17</span>';
+    oldGoalPoint.innerHTML = '<strong>Sep 2026</strong><span>150kg at age 17</span>';
   }
 
   const oldGoalCard = [...document.querySelectorAll('[data-page="gym"] .goal-card')]
     .find((card) => card.textContent.includes('140kg bench in 2026'));
-  if (oldGoalCard) oldGoalCard.textContent = '140kg bench achieved in 2026';
+  if (oldGoalCard) oldGoalCard.textContent = '150kg bench achieved in 2026';
 }
 
 document.addEventListener('DOMContentLoaded', applySnapFinanceUpdates);
