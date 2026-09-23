@@ -95,5 +95,18 @@ function applyBenchPressPRUpdate() {
   if (oldGoalCard) oldGoalCard.textContent = '150kg bench achieved in 2026';
 }
 
+function applyDeadliftPRUpdate() {
+  const deadliftFeature = [...document.querySelectorAll('[data-page="gym"] .gym-feature')]
+    .find((feature) => feature.querySelector('h3')?.textContent.trim() === 'Deadlift');
+
+  if (deadliftFeature) {
+    const description = deadliftFeature.querySelector('p');
+    const number = deadliftFeature.querySelector('.big-number');
+    if (description) description.textContent = 'Reached a 170kg deadlift in September 2026 at age 17, with the longer-term goal of progressing towards 200kg through consistent, controlled training.';
+    if (number) number.textContent = '170kg';
+  }
+}
+
 document.addEventListener('DOMContentLoaded', applySnapFinanceUpdates);
 document.addEventListener('DOMContentLoaded', applyBenchPressPRUpdate);
+document.addEventListener('DOMContentLoaded', applyDeadliftPRUpdate);
